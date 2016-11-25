@@ -17,7 +17,7 @@ $(function(){
             domClass   : 'dropload-down',
             domRefresh : '<div class="dropload-refresh">↑上拉加载更多</div>',
             domLoad    : '<div class="dropload-load"><span class="loading"></span>加载中，请稍候...</div>',
-            domNoData  : '<div class="dropload-noData">暂无更多数据</div>'
+            domNoData  : '<div class="dropload-noData">已经到底了,别扯了</div>'
         },
         loadUpFn : function(me){
             $.ajax({
