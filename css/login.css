@@ -1,0 +1,142 @@
+aside{
+	position: fixed;
+	top: 0;
+	left: 0;
+	z-index: 999;
+	width: 100vw;
+	height: 100vh;
+	padding-top: 20%;
+	animation: aside 400ms;
+	-webkit-animation: aside 400ms;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	display: none;
+}
+.login,.sign-up{
+	margin: 5% auto;
+	padding: 2%;
+	box-shadow: 2px 2px 6px black;
+}
+.login,.sign-up,.login form,.sign-up form{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-flow: column wrap;
+	width: 90%;
+}
+.login,.sign-up{
+	background-color: #3385FF;
+}
+.login span,.sign-up span{
+	color: white;
+}
+.login > form > input,.sign-up > form > input{
+	width: 80%;
+	height: 2rem;
+	line-height: 2rem;
+	margin: 10px;
+	border: none;
+	border-bottom: 1px #c8c8c8 solid;
+	background-color: transparent;
+	color: white;
+	font-size: 14px;
+}
+.login > form > input::-webkit-input-placeholder{
+	color: white;
+}
+.login > form > input::-moz-placeholder{
+	color: white;
+}
+.login > form > input:focus{
+	border-bottom: 1px greenyellow solid;
+}
+.login a{
+	font-size: 14px;
+	color: white;
+	text-decoration: underline;
+}
+.sign-up{
+	display: none;
+}
+.sign-up > form > input::-webkit-input-placeholder{
+	color: white;
+}
+.sign-up > form > input::-moz-placeholder{
+	color: white;
+}
+.sign-up > form > input:focus{
+	border-bottom: 1px greenyellow solid;
+}
+
+@keyframes aside{
+	from{background-color: rgba(100,100,100,.0);}
+	to{background-color: rgba(100,100,100,.5);}
+}
+@-webkit-keyframes aside{
+	from{background-color: rgba(100,100,100,.0);}
+	to{background-color: rgba(100,100,100,.5);}
+}
+.rollIn{
+	animation: rollIn 400ms;
+	-webkit-animation: rollIn 400ms;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+@keyframes rollIn {
+	0% {
+	    opacity: 0;
+	    -webkit-opacity: 0;
+	    transform: translateX(-100%) rotate(-120deg);
+	}
+	100% {
+	    display: flex;
+	    opacity: 1;
+	    -webkit-opacity: 1;
+	    transform: translateX(0px) rotate(0deg);
+	}
+}
+@-webkit-keyframes rollIn {
+	0% {
+	    opacity: 0;
+	    -webkit-opacity: 0;
+	    transform: translateX(-100%) rotate(-120deg);
+	}
+	100% {
+	    display: flex;
+	    opacity: 1;
+	    -webkit-opacity: 1;
+	    transform: translateX(0px) rotate(0deg);
+	}
+}
+.rollOut{
+	animation: rollOut 250ms;
+	-webkit-animation: rollOut 250ms;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+}
+@keyframes rollOut {
+	0% {
+	    display: flex;
+	    opacity: 1;
+	    -webkit-opacity: 1;
+	    transform: translateX(0px) rotate(0deg);
+	}
+	100% {
+	    opacity: 0;
+	    -webkit-opacity: 0;
+	    transform: translateX(100%) rotate(120deg);
+	}
+}
+@-webkit-keyframes rollOut {
+	0% {
+	    display: flex;
+	    opacity: 1;
+	    -webkit-opacity: 1;
+	    transform: translateX(0px) rotate(0deg);
+	}
+	100% {
+	    opacity: 0;
+	    -webkit-opacity: 0;
+	    transform: translateX(100%) rotate(120deg);
+	}
+}

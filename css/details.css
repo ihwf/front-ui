@@ -108,6 +108,16 @@ body {
 	margin: 0 auto 0.5rem;
 }
 
+.commentary > h3{
+	text-align: center;
+	padding-top: 2rem;
+	font-weight: normal;
+}
+
+.commentary > h3 > a{
+	text-decoration: underline;
+}
+
 .commentary .text {
 	width: 70%;
 	height: 3rem;
