@@ -1,9 +1,14 @@
+html{
+	animation: bounceInLeft 200ms;
+	-webkit-animation: bounceInLeft 200ms;
+}
 * {
 	margin: 0;
 	padding: 0;
 	-webkit-tap-highlight-color: rgba(255, 255, 255, 0);
 	-webkit-overflow-scrolling: touch;
 	overflow-scrolling: touch;
+	-webkit-tap-highlight-color: transparent;
 }
 
 ul {
@@ -15,7 +20,7 @@ a {
 }
 
 html {
-	font-size: 18px;
+	font-size: 16px;
 }
 
 body {
@@ -253,10 +258,13 @@ body {
 }
 
 .release a{
-	line-height: 3.4rem;
-	font-size: 2rem;
-	color: white;
-	padding: 25%;
+	line-height: 3rem;
+    font-size: 2rem;
+    color: white;
+    width: 3rem;
+    display: inline-block;
+    text-align: center;
+    padding-top: 2px;
 }
 /*底栏*/
 .footer {

@@ -4,18 +4,51 @@
 		<meta charset="UTF-8">
     		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="renderer" content="webkit" /> 
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+    		<link rel="stylesheet" href="css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="css/common.css"/>
 		<link rel="stylesheet" type="text/css" href="css/release.css"/>
+		<link rel="stylesheet" type="text/css" href="css/wangEditor-mobile.min.css"/>
 		<title>发布文章</title>
 	</head>
 	<body>
-		
+		<!--顶栏-->
+		<header class="header">
+			<a href="index.html" class="icon-chevron-left header_left"></a>
+			<div class="title">发布新文章</div>
+			<a href="javascript:;" class="icon-reorder header_right"></a>
+		</header>
+		<!--文章发布-->
 		<div class="release">
 			<form action="" method="post">
-				<input type="text" id="" value="" />
-				<input type="submit" value=""/>
+				<input type="text" id="title" placeholder="标题"/>
+				
+				<p>内容:</p>
+				
+				<div id="textarea">
+					<textarea id="content-text"></textarea>
+				</div>
+				
+				<p>分类:</p>
+				
+				<div class="lists">
+					<label ><input type="radio" name="a" id="" value="1" /><span>新闻</span></label>
+					<label ><input type="radio" checked="checked" name="a" id="" value="2" /><span>寻物</span></label>
+					<label ><input type="radio" name="a" id="" value="3" /><span>球赛</span></label>
+					<label ><input type="radio" name="a" id="" value="4" /><span>4</span></label>
+					<label ><input type="radio" name="a" id="" value="5" /><span>5</span></label>
+					<label ><input type="radio" name="a" id="" value="5" /><span>5</span></label>
+					<label ><input type="radio" name="a" id="" value="5" /><span>5</span></label>
+				</div>
+				
+				<input type="submit" class="btn btn-blue" value="提交"/>
+				
 			</form>
 		</div>
 		
 	</body>
+	<script src="js/zepto.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/zepto.touch.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/wangEditor-mobile.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="js/release.js" type="text/javascript" charset="utf-8"></script>
 </html>

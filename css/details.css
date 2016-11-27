@@ -24,44 +24,7 @@ body {
 	font-family: "微软雅黑";
 	font-weight: normal;
 }
-/*顶栏*/
-.header {
-	width: 100%;
-	height: 2.5rem;
-	background-color: #3385FF;
-	position: fixed;
-	top: 0;
-	z-index: 99;
-	border-bottom: 1px solid #ddd;
-	display: -moz-box;
-	display: -webkit-box;
-	display: box;
-	/*position: relative;*/
-}
 
-.header_left{
-	line-height: 2.5rem;
-	color: white;
-	padding: 0 1rem;
-	position: absolute;
-}
-
-.header .title{
-	width: 80%;
-	line-height: 2.5rem;
-	color: white;
-	margin: 0 auto;
-	overflow: hidden;
-	text-align: center;
-}
-
-.header_right{
-	line-height: 2.5rem;
-	color: white;
-	padding: 0 1rem;
-	position: absolute;
-	right: 0;
-}
 /*文章内容*/
 .main{
 	margin: 0.5rem auto;

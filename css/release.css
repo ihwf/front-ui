@@ -1,0 +1,92 @@
+
+html{
+	animation: bounceInRight 300ms;
+	-webkit-animation: bounceInRight 300ms;
+}
+body{
+	padding-top: 3rem;
+}
+.release,.release > form{
+	display: flex;
+	justify-content: flex-start;
+	/*align-items: center;*/
+	align-content: center;
+	flex-flow: column wrap;
+	width: 90%;
+	margin: 5px auto;
+}
+.release > form > input{
+	padding: 0 10px;
+}
+.wangEditor-mobile-txt{
+	border: 1px #ccc solid;
+	border-radius: 6px;
+}
+.release > form > input:focus,.wangEditor-mobile-txt:focus{
+	border: 1px yellowgreen solid;
+	border-radius: 6px;
+}
+.release > form > input{
+	flex: 1;
+	box-sizing: border-box;
+	margin: 5px auto;
+	width: 100%;
+	border: 1px #ccc solid;
+	height: 2rem;
+	line-height: 1.5rem;
+	font-size: 1rem;
+	border-radius: 6px;
+}
+.release > form > #textarea{
+	height: 10rem;
+	line-height: 10rem;
+}
+#content-text{
+	height: 10rem;
+	line-height: 10rem;
+}
+.release > form > p{
+	font-size: small;
+}
+.release > form > .lists{
+	display: flex;
+	flex-flow: row wrap;
+}
+.release > form > .lists > label{
+	flex: 1 30%;
+	margin: 5px 1%;
+	max-width: 31%;
+	align-items: center;
+	justify-content: center;
+	flex-flow: row wrap;
+	display: flex;
+}
+.release > form > .lists > label{
+	background-color: #E7E7E7;
+	width: 100%;
+	border-radius: 6px;
+	height: 2rem;
+	line-height: 2rem;
+	text-align: center;
+	box-sizing: border-box;
+	cursor: pointer;
+}
+.release > form > .lists > label >input[type=radio]:checked + span{
+	animation: radioAnimation 200ms;
+	-webkit-animation: radioAnimation 200ms;
+	animation-fill-mode: forwards;
+	-webkit-animation-fill-mode: forwards;
+	border-radius: 6px;
+	height: 2rem;
+	line-height: 2rem;
+	text-align: center;
+	box-sizing: border-box;
+	background-color: #3385FF;
+	color: white;
+}
+.release > form > .lists > label >input[type=radio]{
+	display: none;
+}
+.release > form > input[type=submit]{
+    margin-top: 1rem;
+}
