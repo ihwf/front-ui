@@ -26,7 +26,11 @@
 				<form action="" method="post">
 					<input type="text" name="account" placeholder="用户名/邮箱"/>
 					<input type="password" name="password" placeholder="密码"/>
-					<input type="submit" class="btn btn-green" value="登录"/>
+					<div class="code">
+						<input type="text" name="code" placeholder="验证码"/>
+						<img src="img/main-bg.png"/>
+					</div>
+					<input type="submit" disabled class="btn btn-green btn-disable" value="登录"/>
 					<input type="button" id="sign-up" class="btn btn-red" value="注册"/>
 				</form>
 				<a href="">忘记密码?</a>
@@ -37,8 +41,12 @@
 				<form action="" method="post">
 					<input type="text" name="account" placeholder="用户名/邮箱"/>
 					<input type="password" name="password" placeholder="密码"/>
-					<input type="password" name="password" placeholder="确定密码"/>
-					<input type="submit" class="btn btn-green" value="注册"/>
+					<input type="password" name="repassword" placeholder="确定密码"/>
+					<div class="code">
+						<input type="text" name="code" placeholder="验证码"/>
+						<img src="img/main-bg.png"/>
+					</div>
+					<input type="submit" disabled class="btn btn-green btn-disable" value="注册"/>
 					<input type="button" id="backLogin" class="btn btn-red" value="返回登录"/>
 				</form>
 			</div>

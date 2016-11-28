@@ -137,6 +137,12 @@ footer a {
 .btn-blue:hover{
 	background-color: darkblue !important;
 }
+.btn-disable{
+	background-color: gainsboro !important;
+}
+.btn-disable:hover{
+	background-color: gainsboro !important;
+}
 /*从右滑入*/
 @keyframes bounceInRight {
 	0% {

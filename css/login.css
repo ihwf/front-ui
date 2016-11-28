@@ -41,13 +41,42 @@ aside{
 	color: white;
 	font-size: 14px;
 }
-.login > form > input::-webkit-input-placeholder{
+.login > form > .code,.sign-up > form > .code{
+	width: 80%;
+	height: 2rem;
+	line-height: 2rem;
+	margin: 10px;
+	border: none;
+	/*border-bottom: 1px #c8c8c8 solid;*/
+	background-color: transparent;
+	color: white;
+	font-size: 14px;
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: space-between;
+}
+.login > form > .code > input[name=code],.sign-up > form > .code > input[name=code],.login > form > .code > img,.sign-up > form > .code > img{
+	width: 50%;
+	height: 2rem;
+	line-height: 2rem;
+	border: none;
+	border-bottom: 1px #c8c8c8 solid;
+	background-color: transparent;
+	color: white;
+	font-size: 14px;
+}
+.login > form > .code > img,.sign-up > form > .code > img{
+	border: none;
+	width: 40%;	
+}
+.login > form > input::-webkit-input-placeholder,.login > form > .code > input::-webkit-input-placeholder
+{
 	color: white;
 }
-.login > form > input::-moz-placeholder{
+.login > form > input::-moz-placeholder,.login > form > .code > input::-moz-placeholder{
 	color: white;
 }
-.login > form > input:focus{
+.login > form > input:focus,.sign-up > form > input:focus,.login > form >.code > input:focus,.sign-up > form > .code > input:focus{
 	border-bottom: 1px greenyellow solid;
 }
 .login a{
@@ -58,14 +87,14 @@ aside{
 .sign-up{
 	display: none;
 }
-.sign-up > form > input::-webkit-input-placeholder{
+.sign-up > form > input::-webkit-input-placeholder,.sign-up > form > .code > input::-webkit-input-placeholder{
 	color: white;
 }
-.sign-up > form > input::-moz-placeholder{
+.sign-up > form > input::-moz-placeholder,.sign-up > form > .code > input::-moz-placeholder{
 	color: white;
 }
-.sign-up > form > input:focus{
-	border-bottom: 1px greenyellow solid;
+input[type=submit]{
+	background-color: #DDDDDD;
 }
 
 @keyframes aside{
