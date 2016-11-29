@@ -96,6 +96,12 @@ aside{
 input[type=submit]{
 	background-color: #DDDDDD;
 }
+input[type=password]::after{
+	content: "1111";
+	width: 1rem;
+	height: 1rem;
+	background-color: red;
+}
 
 @keyframes aside{
 	from{background-color: rgba(100,100,100,.0);}

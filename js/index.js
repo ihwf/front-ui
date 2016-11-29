@@ -109,20 +109,20 @@ $(function(){
 	var b = [];
 	var i,j=0;
 	$(document).scroll(function() {
-			a[i]= $(window).scrollTop();
-			b[j]=a[i++];	
-			if(b[j]-b[j-1]>=0){
-				$('.release').animate({bottom:'-3rem'},250,'ease-out');
+		a[i]= $(window).scrollTop();
+		b[j]=a[i++];	
+		if(b[j]-b[j-1]>=0){
+			$('.release').animate({transform:'translateY(8rem)'},250,'ease-out');
 //				$('footer').animate({bottom:'-2.4rem'},250,'ease-out');
-				$('.nav').animate({top:'-2.4rem'},250,'ease-out');
-				i=j=0;
-			}else if(b[j]-b[j-1]<0){
-				$('.release').animate({bottom:'10%'},250,'ease-out');
+			$('.nav').animate({transform:'translateY(-2.4rem)'},250,'ease-out');
+			i=j=0;
+		}else if(b[j]-b[j-1]<0){
+			$('.release').animate({transform:'translateY(0rem)'},250,'ease-out');
 //				$('footer').animate({bottom:'0'},150,'ease-out');
-				$('.nav').animate({top:'0'},250,'ease-out');
-				i=j=0;
-			}
-			j++;
+			$('.nav').animate({transform:'translateY(0rem)'},250,'ease-out');
+			i=j=0;
+		}
+		j++;
 	});
     
     

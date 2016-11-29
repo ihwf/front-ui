@@ -3,4 +3,13 @@ $(function () {
 		$("header").css("background","url('"+response+"')");
 	});
 	
+	$("#head").on("tap",function () {
+		$(document).one("change",function () {
+			$("#wrapper").css("display","block");
+		});
+	});
+	
+	
+	
+	
 });
