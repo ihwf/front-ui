@@ -66,15 +66,20 @@ signUpValid(".sign-up .code input",".sign-up input[name=account]",".sign-up inpu
 
 
 //弹出登录页面
-document.getElementById("login").onclick = function () {
-	document.querySelector("aside").classList.remove("rollOut");
-	document.querySelector("aside").style.display = "block";	
+if(document.getElementById("login")){
+	document.getElementById("login").onclick = function () {
+		document.querySelector("aside").classList.remove("rollOut");
+		document.querySelector("aside").style.display = "block";	
+	}
 }
+
 //关闭登录注册页
-document.querySelector("aside").onclick = function () {
-	this.className = "rollOut";
-	this.addEventListener("webkitAnimationEnd",function aside () {
-		this.style.display = "none";
-		this.removeEventListener("webkitAnimationEnd",aside);
-	})
+if(document.querySelector("aside")){
+	document.querySelector("aside").onclick = function () {
+		this.className = "rollOut";
+		this.addEventListener("webkitAnimationEnd",function aside () {
+			this.style.display = "none";
+			this.removeEventListener("webkitAnimationEnd",aside);
+		})
+	}
 }
