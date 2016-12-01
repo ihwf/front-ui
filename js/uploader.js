@@ -912,11 +912,19 @@ var Uploader = (function() {
             	console.log(msg);
                 if (msg['status'] == 1){
                 		$("#wrapper").css("display","none");
+            			uploader.reset();
                 }else {
                 		$("#wrapper").css("display","none");
+            			uploader.reset();
                 }
 
             });
+//          取消上传
+            $(".cancel-btn").on("click",function () {
+				$("#wrapper").css("display","none");
+            		uploader.reset();
+			});
+
         },
 
         crop: function( data ) {

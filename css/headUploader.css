@@ -309,7 +309,24 @@
 .upload-btn:active {
     color: #C8C8C8;
 }
-
+.cancel-btn{
+	background: transparent;
+    border: none;
+    color: white;
+    padding: 10px 18px;
+    display: inline-block;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: x-large;
+    position: fixed;
+	height: 20px;
+	width: 20px;
+	top: 20px;
+	left: 20px;
+}
+.cancel-btn:active {
+    color: #C8C8C8;
+}
 .webuploader-container{
 	display: none;
 }
