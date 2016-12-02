@@ -8,22 +8,63 @@
 		<link rel="stylesheet" type="text/css" href="css/headUploader.css" />
     		<link rel="stylesheet" href="css/font-awesome.min.css">
 		<link rel="stylesheet" type="text/css" href="css/common.css"/>
+        <link rel="stylesheet" href="css/login.css"/>
 		<link rel="stylesheet" type="text/css" href="css/personal.css"/>
 		
 		<title>个人中心</title>
 	</head>
 	<body>
-		
+		<!--登录页-->
+		<aside>
+			<div class="login rollIn">
+				<span>登录</span>
+				<form action="" method="post">
+					<input type="text" name="account" placeholder="用户名/邮箱"/>
+					<input type="password" name="password" placeholder="密码"/>
+					<div class="code">
+						<input type="text" name="code" placeholder="验证码"/>
+						<img src="img/main-bg.png"/>
+					</div>
+					<input type="submit" disabled class="btn btn-green btn-disable" value="登录"/>
+					<input type="button" id="sign-up" class="btn btn-red" value="注册"/>
+				</form>
+				<a href="">忘记密码?</a>
+			</div>
+			
+			<div class="sign-up rollOut">
+				<span>注册</span>
+				<form action="" method="post">
+					<input type="text" name="account" placeholder="用户名/邮箱"/>
+					<input type="password" name="password" placeholder="密码"/>
+					<input type="password" name="repassword" placeholder="确定密码"/>
+					<div class="code">
+						<input type="text" name="code" placeholder="验证码"/>
+						<img src="img/main-bg.png"/>
+					</div>
+					<input type="submit" disabled class="btn btn-green btn-disable" value="注册"/>
+					<input type="button" id="backLogin" class="btn btn-red" value="返回登录"/>
+				</form>
+			</div>
+		</aside>
+		<!--头像-->
 		<header>
-	        <label>
-	        		<div id="filePicker">选择文件</div>
+	        <!--如果已登录-->
+	        <!--<label>
+	        		<div id="filePicker"></div>
 				<img src="img/main-bg.png" id="head"/>
-	        </label>
-			<div class="name" contenteditable="true">
+	        </label>-->
+			<!--<div class="name" contenteditable="true">
 				name
+			</div>-->
+			<!--如果未登录-->
+			<label>
+				<img src="img/main-bg.png"/>
+	        </label>
+			<div class="name">
+				<a href="javascript:;" id="login">登录 / 注册</a>
 			</div>
 		</header>
-		
+		<!--已登录显示菜单-->
 		<article>
 			<div class="personal-list">
 				<a href="">我的帖子<i class="icon-angle-right"></i></a>
@@ -39,7 +80,7 @@
 				<a href="">退出<i class="icon-angle-right"></i></a>
 			</div>
 		</article>
-		
+		<!--底栏-->
 		<footer>
 		    <a href="index.html" note="index.html" class="item"><i class="icon-home"></i></a>
 		    <a href="#2" note="index1.html" class="item">要不要</a>
@@ -67,6 +108,7 @@
 		
 		<!--<script src="js/zepto.min.js"></script>
 		<script src="js/zepto.touch.js"></script>-->
+		<script src="js/login.js" type="text/javascript" charset="utf-8"></script>
 	    <script type="text/javascript" src="js/jquery.js"></script>
 		<script src="js/nav.js"></script>
 		<!--头像上传-->

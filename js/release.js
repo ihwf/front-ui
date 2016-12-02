@@ -48,7 +48,7 @@ $(function () {
 	});
 //	内容输入时检验
 	$(".wangEditor-mobile-txt").on("input",function () {
-		if(editor.$txt.text() != "" ){
+		if(editor.$txt.html() != "" ){
 			$(".wangEditor-mobile-txt").css("background-color","transparent");
 			$(".wangEditor-mobile-txt").removeClass("vibration");
 		}else{

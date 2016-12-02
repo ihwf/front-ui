@@ -33,6 +33,11 @@ header > .name{
     line-height: 2rem;
     text-align: center;
 }
+header > .name > a{
+	text-shadow: 0 0 10px black;
+	text-decoration: underline;
+	color: white;
+}
 header > .name:focus{
     background-color: rgba(255,255,255,.5);
     overflow: hidden;
