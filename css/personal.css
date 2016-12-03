@@ -19,7 +19,7 @@ header img{
 	width: 5rem;
 	height: 5rem;
 	box-sizing: border-box;
-	border-radius: 2.5rem ;
+	border-radius: 100%;
 	border: 3px rgba(255,255,255,.4) solid;
 }
 header > .name{
